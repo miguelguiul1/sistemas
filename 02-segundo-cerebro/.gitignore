@@ -1,0 +1,5 @@
+# Estado pessoal do Obsidian (muda a cada uso)
+vault/.obsidian/workspace*.json
+vault/.obsidian/cache
+# Log local da rotina
+vault/_rotina/ultima-execucao.log
