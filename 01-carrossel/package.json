@@ -1,0 +1,13 @@
+{
+  "name": "carrossel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gerador de carrosséis (HTML -> PNG 1080x1350)",
+  "scripts": {
+    "instalar": "npm install && npx playwright install chromium",
+    "exemplo": "node gerar.js exemplo/conteudo.json --saida exemplo/png"
+  },
+  "dependencies": {
+    "playwright": "^1.50.0"
+  }
+}

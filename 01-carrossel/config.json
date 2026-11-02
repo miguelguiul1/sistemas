@@ -1,0 +1,22 @@
+{
+  "_ajuda": "Este é o ÚNICO arquivo de estilo. Mexeu aqui, todos os carrosséis novos mudam.",
+  "perfil": "@global.bridge_",
+  "cores": {
+    "fundo": "#0B1713",
+    "verde": "#0F5F46",
+    "dourado": "#D4AF37",
+    "claro": "#F5F0E6"
+  },
+  "fontes": {
+    "titulo": "Playfair Display",
+    "corpo": "Inter"
+  },
+  "textos": {
+    "deslize": "arrasta pro lado",
+    "cta_titulo": "Salva pra *depois*",
+    "cta_texto": "Compartilha com quem precisa ver isso e me segue pra mais conteúdo.",
+    "cta_botao": "Segue {perfil}"
+  },
+  "largura": 1080,
+  "altura": 1350
+}

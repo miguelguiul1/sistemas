@@ -1,0 +1,15 @@
+{
+  "tema": "5 jeitos de usar o Claude na sua agência",
+  "slides": [
+    { "tipo": "capa", "titulo": "5 jeitos de usar o *Claude* na sua agência", "subtitulo": "Menos tempo no operacional, mais tempo vendendo." },
+    { "tipo": "conteudo", "titulo": "1. Briefing sem dor", "texto": "Cola a conversa do cliente e pede: *\"resume em briefing com objetivo, público e prazo\"*." },
+    { "tipo": "conteudo", "titulo": "2. Copy em variações", "texto": "Peça *5 versões* do mesmo anúncio, cada uma com um gancho diferente. Testa e fica com a melhor." },
+    { "tipo": "lista", "titulo": "3. Calendário de conteúdo", "itens": ["Passa o nicho do cliente", "Pede 30 ideias de post", "Separa por *objetivo*: atrair, educar, vender"] },
+    { "tipo": "destaque", "titulo": "Quem *dá contexto* pro Claude recebe resposta de especialista.", "texto": "Quanto mais você explica, melhor ele responde." },
+    { "tipo": "conteudo", "titulo": "4. Relatório pro cliente", "texto": "Joga os números do mês e pede um resumo em *linguagem de dono de negócio*, sem jargão." },
+    { "tipo": "conteudo", "titulo": "5. Revisão final", "texto": "Antes de enviar, pede pro Claude *caçar erros* e deixar o tom mais direto." },
+    { "tipo": "cta" }
+  ],
+  "legenda": "Cinco jeitos simples de usar o Claude na rotina da agência e ganhar horas no mês. Qual desses você já usa? Conta aqui embaixo 👇\n\nSalva pra consultar depois e manda pra aquele colega de agência.",
+  "hashtags": ["#claude", "#inteligenciaartificial", "#marketingdigital", "#agenciademarketing", "#ia", "#produtividade", "#conteudo", "#empreendedorismo"]
+}
