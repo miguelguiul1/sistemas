@@ -22,7 +22,7 @@ function instalar() {
 }
 
 function enviarResumo() {
-  var meuEmail = Session.getActiveUser().getEmail();
+  var meuEmail = Session.getEffectiveUser().getEmail();
   var hoje = new Date();
   var assunto = '☀️ Resumo da manhã — ' +
     Utilities.formatDate(hoje, Session.getScriptTimeZone(), 'dd/MM (EEE)');
@@ -53,14 +53,15 @@ function secaoTarefas_() {
   var itens = [];
   try {
     var listas = Tasks.Tasklists.list().items || [];
-    var hoje = new Date(); hoje.setHours(23, 59, 59, 999);
+    var tz = Session.getScriptTimeZone();
+    var hojeStr = Utilities.formatDate(new Date(), tz, 'yyyy-MM-dd');
     listas.forEach(function (l) {
       var ts = Tasks.Tasks.list(l.id, { showCompleted: false }).items || [];
       ts.forEach(function (t) {
-        var venc = t.due ? new Date(t.due) : null;
-        if (venc && venc > hoje) return;            // só vencidas/de hoje
-        var atrasada = venc && venc < new Date(new Date().setHours(0, 0, 0, 0));
-        itens.push('<li>' + (atrasada ? '⚠️ ' : '') + esc_(t.title) + '</li>');
+        if (!t.due) return;                          // sem data: ignora
+        var dia = t.due.substring(0, 10);            // 'due' vem como data (meia-noite UTC)
+        if (dia > hojeStr) return;                   // só vencidas/de hoje
+        itens.push('<li>' + (dia < hojeStr ? '⚠️ ' : '') + esc_(t.title) + '</li>');
       });
     });
   } catch (err) {
