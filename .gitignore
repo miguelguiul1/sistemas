@@ -1,3 +1,5 @@
 node_modules/
 .env
 *.key
+# Sistema 4: prints de anúncios de terceiros ficam só no seu notebook
+04-anuncios/pesquisas/*/

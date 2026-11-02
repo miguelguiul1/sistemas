@@ -1,0 +1,14 @@
+{
+  "name": "anuncios",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pesquisa de anúncios na Biblioteca da Meta (pública, grátis) via Playwright",
+  "scripts": {
+    "instalar": "npm install && npx playwright install chromium",
+    "pesquisar": "node pesquisar.js",
+    "teste": "node testar.js"
+  },
+  "dependencies": {
+    "playwright": "^1.50.0"
+  }
+}
